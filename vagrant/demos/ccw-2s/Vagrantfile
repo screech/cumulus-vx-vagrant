@@ -38,7 +38,8 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define 'leaf1' do |leaf1|
-    leaf1.vm.box = 'CumulusCommunity/cumulus-vx'
+    #leaf1.vm.box = 'CumulusCommunity/cumulus-vx'
+    leaf1.vm.box = 'cumulus-vx-3.1.0'
     leaf1.vm.hostname = "leaf1.#{domain}"
 
     # Fix the MAC of the management interface
@@ -82,7 +83,8 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define 'leaf2' do |leaf2|
-    leaf2.vm.box = 'CumulusCommunity/cumulus-vx'
+    #leaf2.vm.box = 'CumulusCommunity/cumulus-vx'
+    leaf2.vm.box = 'cumulus-vx-3.1.0'
     leaf2.vm.hostname = "leaf2.#{domain}"
 
     # Fix the MAC of the management interface

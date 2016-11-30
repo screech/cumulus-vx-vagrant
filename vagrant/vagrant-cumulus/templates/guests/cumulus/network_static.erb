@@ -4,5 +4,6 @@ auto <%= options[:name] %>
 iface <%= options[:name] %>
 <% if options[:ip] %>
       address <%= options[:ip] %>
+      netmask <%= options[:netmask] %>
 <% end %>
 #VAGRANT-END
